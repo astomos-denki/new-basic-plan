@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="アストモスでんきの特定商取引法に基づく表記をご案内します。">
+<title>特定商取引法に基づく表記｜アストモスでんき</title>
+<style>
+:root {
+  --brand: #eaa527;
+  --brand-dark: #c65d16;
+  --brand-light: #fff0df;
+  --brand-pale: #fff9f1;
+  --ink: #333;
+  --muted: #666;
+  --line: #eadfce;
+  --page: #fffdf9;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: "Noto Sans JP", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: var(--brand-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+a:hover { color: #93420f; }
+
+main {
+  width: min(1000px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 36px 0 48px;
+}
+.page-heading {
+  text-align: center;
+  margin: 0 0 24px;
+}
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.4;
+  letter-spacing: .025em;
+}
+.heading-line {
+  width: 64px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 10px;
+  background: var(--brand);
+}
+.intro {
+  max-width: 760px;
+  margin: 0 auto 20px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+.legal-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(95,66,25,.06);
+}
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.legal-table th,
+.legal-table td {
+  padding: 12px 18px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.legal-table tr:last-child th,
+.legal-table tr:last-child td {
+  border-bottom: 0;
+}
+.legal-table th {
+  width: 31%;
+  background: var(--brand-pale);
+  font-size: 14px;
+  font-weight: 900;
+}
+.legal-table td { font-size: 14px; }
+.label-mark {
+  display: inline-block;
+  width: 4px;
+  height: 15px;
+  margin-right: 8px;
+  border-radius: 4px;
+  background: var(--brand);
+  vertical-align: -3px;
+}
+.detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+}
+.detail-link::after {
+  content: "↗";
+  font-size: 13px;
+}
+.contact-number {
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: .02em;
+}
+
+/* ページ最下部の戻るリンク */
+.bottom-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0 0;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 7px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: #6b5845;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.back-link:hover {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+}
+
+@media (max-width: 650px) {
+  main {
+    width: calc(100% - 28px);
+    padding: 26px 0 36px;
+  }
+  .page-heading { margin-bottom: 18px; }
+  .heading-line { margin-top: 12px; }
+  .intro {
+    margin-bottom: 16px;
+    font-size: 13px;
+    text-align: left;
+  }
+  .legal-card { border-radius: 12px; }
+  .legal-table,
+  .legal-table tbody,
+  .legal-table tr,
+  .legal-table th,
+  .legal-table td {
+    display: block;
+    width: 100%;
+  }
+  .legal-table tr {
+    border-bottom: 1px solid var(--line);
+  }
+  .legal-table tr:last-child { border-bottom: 0; }
+  .legal-table th {
+    padding: 7px 12px;
+    border-bottom: 0;
+    font-size: 13px;
+  }
+  .legal-table td {
+    padding: 7px 12px 10px;
+    font-size: 13px;
+  }
+  .label-mark { height: 13px; }
+  .contact-number { font-size: 15px; }
+  .bottom-actions { margin-top: 20px; }
+  .back-link {
+    min-height: 36px;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="page-heading">
+    <h1>特定商取引法に基づく表記</h1>
+    <div class="heading-line"></div>
+  </div>
+
+  <p class="intro">
+    アストモスでんきのお申し込みに関する事業者情報、販売価格、お支払い方法などについて、以下のとおり表示しています。
+  </p>
+
+  <section class="legal-card" aria-label="特定商取引法に基づく表記">
+    <table class="legal-table">
+      <tbody>
+        <tr>
+          <th><span class="label-mark"></span>事業者名</th>
+          <td>アストモスエネルギー株式会社</td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>代表者</th>
+          <td>代表取締役社長　佐藤 利宣</td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>住所</th>
+          <td>
+            郵便番号：100-0005<br>
+            所在地：東京都千代田区丸の内1-7-12 サピアタワー24F
+          </td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>問い合わせ先</th>
+          <td>
+            アストモスでんき　お客さまセンター<br>
+            <span class="contact-number">電話：0120-068-051</span><br>
+            受付時間：10:00 ～ 17:30（土日祝日、年末年始を除く）
+          </td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>販売価格（税込）</th>
+          <td>
+            <a class="detail-link" href="specified_commercial_transaction_law_20260101.pdf#06">重要事項説明書 6項</a>をご確認ください。
+          </td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>支払方法</th>
+          <td>
+            <a class="detail-link" href="specified_commercial_transaction_law_20260101.pdf#07">重要事項説明書 7項</a>をご確認ください。
+          </td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>支払時期</th>
+          <td>料金の支払い義務は原則として検針日に発生するものとし、当月、若しくは翌月のご請求となります。</td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>供給開始時期</th>
+          <td>供給開始日が決まりましたら、電子メールにてご連絡します。他の電力会社より切替の場合、原則、定例検針日からの供給開始となり、お申込みから供給開始まで1～1.5か月程度かかります。</td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>電気料金以外にご負担いただく必要のあるもの</th>
+          <td>
+            <a class="detail-link" href="specified_commercial_transaction_law_20260101.pdf#08">重要事項説明書 8項、9項</a>をご確認ください。
+          </td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>電気の使用方法、器具・機械その他の用品の使用等の制限</th>
+          <td>
+            <a class="detail-link" href="specified_commercial_transaction_law_20260101.pdf#18">重要事項説明書 18項</a>をご確認ください。
+          </td>
+        </tr>
+        <tr>
+          <th><span class="label-mark"></span>返品可否</th>
+          <td>電気という商品の性質上、返品はできません。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="bottom-actions">
+    <a
+      class="back-link"
+      href="https://astomos-denki.github.io/basic-plan/simulation.html"
+      onclick="if (window.history.length > 1) { event.preventDefault(); window.history.back(); }"
+    >← 前のページに戻る</a>
+  </div>
+</main>
+</body>
+</html>
